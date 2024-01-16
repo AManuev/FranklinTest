@@ -33,30 +33,30 @@
     <script>
       const library = document.createElement('sidekick-library')
       library.config = {
-        base: '/tools/sidekick/config.json',
+        base: '/tools/sidekick/library.json',
         plugins: {
             blocks: {
-            viewPorts: [
-                {
-                  width: '599px',
-                  label: 'Small',
-                  icon: 'device-phone',
-                },
-                {
-                  width: '899px',
-                  label: 'Medium',
-                  icon: 'device-tablet',
-                },
-                {
-                  width: '100%',
-                  label: 'Large',
-                  icon: 'device-desktop',
-                  default: true,
-                },
-                ],
-            }
-        }
-     }
+              viewPorts: [
+                  {
+                    width: '599px',
+                    label: 'Small',
+                    icon: 'device-phone',
+                  },
+                  {
+                    width: '899px',
+                    label: 'Medium',
+                    icon: 'device-tablet',
+                  },
+                  {
+                    width: '100%',
+                    label: 'Large',
+                    icon: 'device-desktop',
+                    default: true,
+                  },
+                  ],
+              }
+          }
+      }
       document.body.prepend(library)
     </script>
   </body>

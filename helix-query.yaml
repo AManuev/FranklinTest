@@ -26,9 +26,9 @@ indices:
     <<: *default
     include:
       - /en/**
-    target: /en/query-index.xlsx
+    target: /en/query-index.json
   de:
     <<: *default
     include:
       - /de/**
-    target: /de/query-index.xlsx
+    target: /de/query-index.json

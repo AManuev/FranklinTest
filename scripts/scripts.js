@@ -13,6 +13,8 @@ import {
   loadCSS,
 } from './aem.js';
 
+import LuigiClient from '@luigi-project/client';
+
 const LCP_BLOCKS = []; // add your LCP blocks to the list
 
 /**

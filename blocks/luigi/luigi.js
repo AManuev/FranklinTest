@@ -1,6 +1,8 @@
 const elem = document.getElementById('this-is-a-luigi-search-container');
 const elh = document.createElement('h1');
 const newContent = document.createTextNode("This is a luigi container.");
+elh.appendChild(newContent);
+
 elem.append(elh);
 
 //import LuigiClient from '@luigi-project/client';

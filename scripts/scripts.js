@@ -12,6 +12,7 @@ import {
   loadBlocks,
   loadCSS,
   fetchPlaceholders,
+  toCamelCase,
 } from './aem.js';
 
 const LCP_BLOCKS = []; // add your LCP blocks to the list
@@ -130,6 +131,10 @@ function loadDelayed() {
 async function loadPage() {
   const placeholders = await fetchPlaceholders();
   const { aboutUs } = placeholders;
+  const abouUs = document.getElementById('about-us');
+
+  abouUs.innerText = abouUs.innerText.replace(toCamelCase(abouUs), abouUs);
+  
   await loadEager(document);
   await loadLazy(document);
   loadDelayed();

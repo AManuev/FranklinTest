@@ -131,9 +131,9 @@ function loadDelayed() {
 async function loadPage() {
   const placeholders = await fetchPlaceholders();
   const { aboutUs } = placeholders;
-  const abouUs = document.getElementById('about-us');
+  const aboutUsEl = document.getElementById('about-us');
 
-  abouUs.innerText = abouUs.innerText.replace(toCamelCase(abouUs), abouUs);
+  aboutUsEl.innerText = aboutUsEl.innerText.replace(toCamelCase(aboutUs), aboutUs);
   
   await loadEager(document);
   await loadLazy(document);

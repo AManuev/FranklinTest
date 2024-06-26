@@ -132,8 +132,11 @@ async function loadPage() {
   const placeholders = await fetchPlaceholders();
   const { aboutUs } = placeholders;
   const aboutUsEl = document.getElementById('about-us');
-
-  aboutUsEl.innerText = aboutUsEl.innerText.replace(toCamelCase(aboutUs), aboutUs);
+  
+  let originalText = Object.keys({aboutUs})[0].replace(/([A-Z])/g, " $1");
+  originalText = originalText.charAt(0).toUpperCase() + originalText.slice(1);
+  
+  aboutUsEl.innerText = aboutUsEl.innerText.replace(originalText, aboutUs);
   
   await loadEager(document);
   await loadLazy(document);

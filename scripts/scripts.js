@@ -128,6 +128,8 @@ function loadDelayed() {
 }
 
 async function loadPage() {
+  const placeholders = await fetchPlaceholders();
+  const { aboutUs } = placeholders;
   await loadEager(document);
   await loadLazy(document);
   loadDelayed();

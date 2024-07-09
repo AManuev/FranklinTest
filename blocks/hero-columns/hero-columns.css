@@ -1,4 +1,4 @@
-.her-columns > div {
+.hero-columns > div {
   display: flex;
   flex-direction: column;
 }
@@ -9,10 +9,12 @@
 
 .hero-columns > div > div {
   order: 1;
+  color: white;
 }
 
 .hero-columns > div > .hero-columns-img-col {
   order: 0;
+  flex: none;
 }
 
 .hero-columns > div > .hero-columns-img-col img {
@@ -20,15 +22,18 @@
 }
 
 @media (width >= 900px) {
-
-    .hero-columns >  {
+    .hero-columns-wrapper {
         max-width: 100%;
         background-color: magenta;
     }
 
+    .hero-columns >  {
+        max-width: 1200px;
+    }
+
     .hero-columns > div {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
     }

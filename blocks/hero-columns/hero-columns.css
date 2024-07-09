@@ -1,8 +1,3 @@
-.hero-columns-wrapper {
-    max-width: 100%;
-    background-color: magenta;
-}
-
 .her-columns > div {
   display: flex;
   flex-direction: column;
@@ -25,14 +20,20 @@
 }
 
 @media (width >= 900px) {
-  .hero-columns > div {
-    align-items: center;
-    flex-direction: unset;
-    gap: 32px;
-  }
 
-  .hero-columns > div > div {
-    flex: 1;
-    order: unset;
-  }
+    .hero-columns >  {
+        max-width: 100%;
+        background-color: magenta;
+    }
+
+    .hero-columns > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-columns > div > div {
+        order: unset;
+    }
 }

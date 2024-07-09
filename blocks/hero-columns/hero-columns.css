@@ -64,6 +64,6 @@
 
     .hero-columns > div > div {
         order: unset;
-        margin: 3%;
+        margin: 1% 3%;
     }
 }

@@ -4,6 +4,14 @@
   background-color: rgb(161, 0, 194);
 }
 
+.magenta {
+    background-color: #a100c2 !important;
+}
+
+.black {
+    background-color: black !important;
+}
+
 .hero-columns img {
   width: 100%;
 }

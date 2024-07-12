@@ -29,7 +29,7 @@ export default function decorate(block) {
       }
 
       block.classList.add(bkColor.toLowerCase());
-      block.parentElement.classList.add(bkColor.toLowerCase());
+      block.parentElement.classList.add(bgColor.toLowerCase());
     }
     block.children[1].remove();
   }

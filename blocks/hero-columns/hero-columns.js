@@ -19,7 +19,17 @@ export default function decorate(block) {
   if (block.children.length == 2) {
     const bgColor = block.children[1].children[1].innerText.trim();
     if (bgColor) {
-      block.style.backgroundColor = bgColor;
+      if (block.classList.contains('magenta') || block.classList.contains('black')) {
+        block.classList.remove('magenta');
+        block.classList.remove('black');
+      }
+      if (block.parentElement.classList.contains('magenta') || block.parentElement.classList.contains('black')) {
+        block.parentElement.classList.remove('magenta');
+        block.parentElement.classList.remove('black');
+      }
+
+      block.classList.add(bkColor.toLowerCase());
+      block.parentElement.classList.add(bkColor.toLowerCase());
     }
     block.children[1].remove();
   }

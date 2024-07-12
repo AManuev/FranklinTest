@@ -15,4 +15,12 @@ export default function decorate(block) {
       }
     });
   });
+
+  if (block.children.length == 2) {
+    const bgColor = block.children[1].children[1].innerText.trim();
+    if (bgColor) {
+      block.style.backgroundColor = bgColor;
+    }
+    block.children[1].remove();
+  }
 }

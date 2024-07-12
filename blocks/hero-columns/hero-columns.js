@@ -28,7 +28,7 @@ export default function decorate(block) {
         block.parentElement.classList.remove('black');
       }
 
-      block.classList.add(bkColor.toLowerCase());
+      block.classList.add(bgColor.toLowerCase());
       block.parentElement.classList.add(bgColor.toLowerCase());
     }
     block.children[1].remove();

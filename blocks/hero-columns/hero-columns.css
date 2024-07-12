@@ -1,7 +1,6 @@
 .hero-columns > div {
   display: flex;
   flex-direction: column;
-  background-color: rgb(161, 0, 194);
 }
 
 .magenta {
